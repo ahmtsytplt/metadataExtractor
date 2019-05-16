@@ -138,14 +138,12 @@ public class test extends JFrame{
 			  		      	}
 			  		      	System.out.println("Background colour: " + backgroundColour);
 				  		    
-			  		      	byte[] allBytes = everything.getBytes();
+			  		      	/*byte[] allBytes = everything.getBytes();
 			  		      	
 			  		      	Integer fs = allBytes.length;
 			  		      	Double numberOfImages = Double.valueOf( fs * 8)/ (width * height * 3 * 8) ;
-			  		      	System.out.println("Number of images: " + numberOfImages);
+			  		      	System.out.println("Number of images: " + numberOfImages);*/
 			  		      	
-			  		      	
-				  		    
 			  		      	
 		  		      		break;
 		  		      	case "jpg":
