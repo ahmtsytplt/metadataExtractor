@@ -59,8 +59,8 @@ public class test extends JFrame{
 		    public void actionPerformed(ActionEvent e) {
 		    	fileName = "";
 		    	
-		    	JFileChooser c = new JFileChooser();
-		    	File dFile = new File("C:\\Users\\Ahmet\\Dropbox\\Format\\Computer Engineering\\4-2\\Multimedia Systems");
+		    	JFileChooser c = new JFileChooser();	
+		    	File dFile = new File("C:\\Users\\".concat(System.getProperty("user.name").concat("\\Desktop")));
 		    	c.setCurrentDirectory(dFile);
 		    	// Demonstrate "Open" dialog:
 		    	int rVal = c.showOpenDialog(test.this);
