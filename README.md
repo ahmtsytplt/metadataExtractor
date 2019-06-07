@@ -22,5 +22,5 @@ Shown Metadata:
   Chunk Size, Format, Channel No, Sampling Rate, Bits per Sample.
   
 -JPG:
-  File Size, Big Endian/ Little Endian, Processed or Original.
+  File Size, Big Endian/ Little Endian, Processed-Photoshopped or Original.
   
