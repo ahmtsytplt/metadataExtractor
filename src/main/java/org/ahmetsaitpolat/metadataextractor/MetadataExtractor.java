@@ -1,4 +1,4 @@
-package metadataExtractor;
+package org.ahmetsaitpolat.metadataextractor;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;
@@ -20,7 +20,7 @@ import javax.swing.JTextField;
 
 
 @SuppressWarnings("serial")
-public class test extends JFrame{
+public class MetadataExtractor extends JFrame{
 
 	private JTextField filename = new JTextField(), dir = new JTextField();
 
@@ -30,7 +30,7 @@ public class test extends JFrame{
 	public  BufferedReader br;
 	
 	
-	public test() {
+	public MetadataExtractor() {
 		  
 	    JPanel p = new JPanel();
 	    open.addActionListener(new OpenL());
@@ -63,7 +63,7 @@ public class test extends JFrame{
 		    	File dFile = new File("C:\\Users\\".concat(System.getProperty("user.name").concat("\\Desktop")));
 		    	c.setCurrentDirectory(dFile);
 		    	// Demonstrate "Open" dialog:
-		    	int rVal = c.showOpenDialog(test.this);
+		    	int rVal = c.showOpenDialog(MetadataExtractor.this);
 		    	
 		    	if (rVal == JFileChooser.APPROVE_OPTION) {
 		    		filename.setText(c.getSelectedFile().getPath().toString());
@@ -352,11 +352,6 @@ public class test extends JFrame{
 		  frame.setVisible(true);
 	  }
 	
-	  public static void main(String[] args) throws IOException {
-		  
-		  System.out.println("Select the file ");
-		  run(new test(), 640, 480);
-		  
-	}
+
 
 }
